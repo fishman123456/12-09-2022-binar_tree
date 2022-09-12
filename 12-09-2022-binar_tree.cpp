@@ -10,8 +10,8 @@ using namespace std;
 // структура представляющая элемент дерева
 typedef struct tree_element{
     int valve; // корень
-    struct three_element* left; //
-    struct three_element* right;
+    struct three_element* left; // левая ветка
+    struct three_element* right;// правая ветка
 } tree_element;
 
 //создание элемента с заданным значением
@@ -36,13 +36,12 @@ void insert_into_tree(tree_element* root, tree_element* elem) {
         if (root->left == NULL) {
             // левое поддерево - пустое. Сюда и вставляем новый элемент.
             root->left = elem;
-        }
-        else {
+        } else {
             //слева что то есть рекурсивно вставляем в левое поддерево
             insert_into_tree(root->right, elem);
         }
-    }
-    else { //идем в правое поддерево
+    } else {
+        //идем в правое поддерево
         if (root->right == NULL) {
             root->right = elem;
         }
