@@ -1,18 +1,2 @@
 ﻿  12-09-2022-binar_tree.cpp
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(31,15): warning C4091: : пропускается слева от "tree_element", когда ни одна переменная не объявлена
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(38,30): error C2440: =: невозможно преобразовать "tree_element *" в "three_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(38,26): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(41,47): error C2664: "void insert_into_tree(tree_element *,tree_element *)": невозможно преобразовать аргумент 1 из "three_element *" в "tree_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(41,34): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(33,6): message : см. объявление "insert_into_tree"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(46,31): error C2440: =: невозможно преобразовать "tree_element *" в "three_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(46,27): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(49,47): error C2664: "void insert_into_tree(tree_element *,tree_element *)": невозможно преобразовать аргумент 1 из "three_element *" в "tree_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(49,34): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(33,6): message : см. объявление "insert_into_tree"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(55,34): error C2664: "void print_tree(tree_element *)": невозможно преобразовать аргумент 1 из "three_element *" в "tree_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(55,28): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(53,6): message : см. объявление "print_tree"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(59,35): error C2664: "void print_tree(tree_element *)": невозможно преобразовать аргумент 1 из "three_element *" в "tree_element *"
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(59,28): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
-C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(53,6): message : см. объявление "print_tree"
+  12-09-2022-binar_tree.vcxproj -> C:\Users\Fishman_1\Documents\GitHub\12-09-2022-binar_tree\x64\Debug\12-09-2022-binar_tree.exe
