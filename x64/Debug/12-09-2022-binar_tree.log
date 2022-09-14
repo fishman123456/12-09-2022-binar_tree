@@ -1,2 +1,3 @@
 ﻿  12-09-2022-binar_tree.cpp
-  12-09-2022-binar_tree.vcxproj -> C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\x64\Debug\12-09-2022-binar_tree.exe
+C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(63,5): error C2446: ==: нет преобразования "tree_element *" в "int"
+C:\Users\profi\Documents\Git Hub\12-09-2022-binar_tree\12-09-2022-binar_tree.cpp(63,46): message : Не существует контекста, в котором такое преобразование возможно

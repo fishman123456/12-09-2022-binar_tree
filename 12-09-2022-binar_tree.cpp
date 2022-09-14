@@ -18,7 +18,7 @@ typedef struct tree_element {
 tree_element* create_tree_element(int i);
 
 // функция поиска элемента в дереве
-int seach_into_tree(tree_element* root, tree_element* elem);
+void seach_into_tree(tree_element* root, int elem);
 
 //вставляем элемент elem в дерево с корнем root
 void insert_into_tree(tree_element* root, tree_element* elem);
@@ -56,23 +56,13 @@ void insert_into_tree(tree_element* root, tree_element* elem) {
 		}
 	}
 }
+
 // создаём поиск элемента в дереве
-int seach_into_tree(tree_element* root, tree_element* elem, int seach_val) {
-	if (elem->valve < root->valve) {
-		//идем в левое поддерево
-		if (root->left == NULL) {
-			// левое поддерево - пустое. Сюда и вставляем новый элемент.
-			return 0;
-		}
-	}   //идем в правое поддерево
-	if (root->right == NULL) {
-		if (root->valve = seach_val)
-		{
-			cout << root;
-		}
+void seach_into_tree(tree_element* root, int seach_val) {
+	// доделать дома
+	if (( root->valve != NULL) && (seach_val == root) ) {
+		cout << "42";
 	}
-	//идем в правое поддерево
-	return 0;
 }
 void print_tree(tree_element* cur_elem) {
 	if (cur_elem->left != NULL) {
@@ -87,16 +77,16 @@ void print_tree(tree_element* cur_elem) {
 
 int main()
 {
-	int seach_val = 42;
+	int seach_val = -6;
 	int a[7] = { -3,1,-5,42,2,-6,8 };
-	tree_element* root = create_tree_element(500);
+	tree_element* root = create_tree_element(10);
 	for (int i = 0; i < 7; i++) {
 		tree_element* el = create_tree_element(a[i]);
 		insert_into_tree(root, el);
 	}
 	cout << "My tree:" << endl;
 	print_tree(root);
-	int seach_into_tree(seach_val);
+	seach_into_tree(root,-6);
 	return 0;
 }
 
