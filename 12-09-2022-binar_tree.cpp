@@ -52,6 +52,7 @@ void insert_into_tree(tree_element* root, tree_element* elem) {
 			root->right = elem;
 		}
 		else {
+			// вставляем 
 			insert_into_tree(root->right, elem);
 		}
 	}
@@ -60,8 +61,29 @@ void insert_into_tree(tree_element* root, tree_element* elem) {
 // создаём поиск элемента в дереве
 void seach_into_tree(tree_element* root, int seach_val) {
 	// доделать дома
-	if (( root->valve != NULL) && (seach_val == root) ) {
-		cout << "42";
+	if (root == NULL)
+	{
+		cout << "root==nullptr";
+	}
+	else
+	if ((root->valve != NULL) && (seach_val == root->valve)) {
+		cout << seach_val << " == root->valve" << endl;
+	}
+	else
+	{
+		if ((root->valve != NULL) && (seach_val < root->valve)) {
+			seach_into_tree(root->left, seach_val);
+		}
+		else
+		{
+			if (root->valve != NULL) {
+				seach_into_tree(root->right, seach_val);
+			}
+			else
+			{
+				cout << seach_val << " == root->right";
+			}
+		}
 	}
 }
 void print_tree(tree_element* cur_elem) {
@@ -77,7 +99,9 @@ void print_tree(tree_element* cur_elem) {
 
 int main()
 {
-	int seach_val = -6;
+	int seach_val;
+	cout << "input value\t";
+	cin >> seach_val;
 	int a[7] = { -3,1,-5,42,2,-6,8 };
 	tree_element* root = create_tree_element(10);
 	for (int i = 0; i < 7; i++) {
@@ -86,7 +110,7 @@ int main()
 	}
 	cout << "My tree:" << endl;
 	print_tree(root);
-	seach_into_tree(root,-6);
+	seach_into_tree(root, seach_val);
 	return 0;
 }
 
