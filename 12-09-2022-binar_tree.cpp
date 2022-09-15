@@ -66,22 +66,24 @@ void seach_into_tree(tree_element* root, int seach_val) {
 		cout << "root==nullptr";
 	}
 	else
-	if ((root->valve != NULL) && (seach_val == root->valve)) {
-		cout << seach_val << " == root->valve" << endl;
-	}
-	else
 	{
-		if ((root->valve != NULL) && (seach_val < root->valve)) {
-			seach_into_tree(root->left, seach_val);
+		if ((root->valve != NULL) && (seach_val == root->valve)) {
+			cout << seach_val << " == root->valve" << endl;
 		}
 		else
 		{
-			if (root->valve != NULL) {
-				seach_into_tree(root->right, seach_val);
+			if ((root->valve != NULL) && (seach_val < root->valve)) {
+				seach_into_tree(root->left, seach_val);
 			}
 			else
 			{
-				cout << seach_val << " == root->right";
+				if (root->valve != NULL) {
+					seach_into_tree(root->right, seach_val);
+				}
+				else
+				{
+					cout << seach_val << " == root->right";
+				}
 			}
 		}
 	}
